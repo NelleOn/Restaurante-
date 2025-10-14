@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Automatisering • Utdanning • Helse • Kreativitet • Hverdags Teknologi</title>
+  <!-- Font applied ONLY to the title as requested -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000;
+      --fg:#eaeaea;
+      --accent:#7bd389;
+      --muted:#bdbdbd;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--fg);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:2rem;
+    }
+    .card{
+      max-width:820px;
+      width:100%;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;
+      padding:2rem;
+      box-shadow:0 8px 30px rgba(0,0,0,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    /* Title has its own class so font + size can be changed easily */
+    .title{
+      font-family: 'Press Start 2P', system-ui, sans-serif; /* only the title uses this font */
+      font-size:20px; /* change size here if you want larger/smaller */
+      margin:0 0 1rem 0;
+      letter-spacing:0.02em;
+      color:var(--accent);
+    }
+    .subtitle{
+      margin:0 0 1.25rem 0;
+      color:var(--muted);
+      font-size:0.85rem;
+    }
+    .list{
+      display:grid;
+      gap:0.85rem;
+    }
+    .item{
+      padding:0.85rem 1rem;
+      border-radius:10px;
+      background:rgba(255,255,255,0.01);
+      display:flex;
+      align-items:flex-start;
+      gap:0.85rem;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .item h3{margin:0;font-size:1rem}
+    .item p{margin:0;font-size:0.95rem;color:var(--muted)}
+
+    /* emoji support: hidden by default to respect preference against emojis */
+    .emoji{display:none;min-width:36px;font-size:22px;line-height:1}
+    /* add class "show-emojis" on <body> to show emoji icons */
+    body.show-emojis .emoji{display:block}
+
+    /* small helper for the tech list */
+    .tech-list{display:flex;gap:0.5rem;flex-wrap:wrap}
+    .chip{background:rgba(255,255,255,0.02);padding:0.25rem 0.6rem;border-radius:999px;font-size:0.82rem;color:var(--fg);border:1px solid rgba(255,255,255,0.02)}
+
+    @media (max-width:520px){
+      .card{padding:1rem}
+      .title{font-size:14px}
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1 class="title">Prioriteter</h1>
+    <p class="subtitle">En kort og tydelig oversikt du kan lime rett inn på en side.</p>
+
+    <section class="list">
+      <article class="item">
+        <div class="emoji">⚙️</div>
+        <div>
+          <h3>Automatisering</h3>
+          <p>Enklere skolearbeid — mer tid til forståelse og kreativitet.</p>
+          <p>Automatisering kan for eksempel være å bruke digitale verktøy for å samle inn data automatisk, eller å la systemer organisere oppgaver slik at elever kan fokusere mer på læring fremfor rutinearbeid.</p>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="emoji">🎓</div>
+        <div>
+          <h3>Utdanning</h3>
+          <p>Bedre læring gjennom tilpassede verktøy og metoder.</p>
+          <p>Ved å bruke digitale plattformer kan undervisningen tilpasses den enkelte elev, noe som gir en mer effektiv og personlig læringsopplevelse.</p>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="emoji">🧘‍♀️</div>
+        <div>
+          <h3>Helse</h3>
+          <p>Fokus på trivsel — mental og fysisk helse for elever.</p>
+          <p>Teknologi kan bidra til bedre oversikt over fysisk aktivitet, pauser og stressmestring, slik at helsen får like stor plass som læring.</p>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="emoji">🎨</div>
+        <div>
+          <h3>Kreativitet</h3>
+          <p>Skape og løse problemer med tverrfaglig tenkning.</p>
+          <p>Kreative prosesser oppstår når elever får bruke verktøy til å eksperimentere, lage prototyper og samarbeide på tvers av fagområder.</p>
+        </div>
+      </article>
+
+      <article class="item">
+        <div class="emoji">💻</div>
+        <div>
+          <h3>Hverdags Teknologi</h3>
+          <p>PC, mobil, nettbrett — verktøy som støtter hverdagen.</p>
+          <p>Disse enhetene gir tilgang til kommunikasjon, informasjon og praktiske apper som forenkler både skolearbeid og privatliv.</p>
+          <div class="tech-list" aria-hidden="true">
+            <span class="chip">PC</span>
+            <span class="chip">Mobil</span>
+            <span class="chip">Nettbrett</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <p style="margin-top:1rem;color:var(--muted);font-size:0.85rem">Tips: for emojis — legg til <code>class="show-emojis"</code> på <code>&lt;body&gt;</code>.</p>
+  </main>
+</body>
+</html>

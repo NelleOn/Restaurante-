@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stilR&M.css">
+    <link rel="stylesheet" type="text/css" href="still.css">
     <title>Prototype</title>
 </head>
 <body>
 
-<div class="gridcontainer1"> 
-  <div class="grid-item1">
+    <div class="gridcontainer1">
+        <!-- Circles with numbers -->
 
-    <h1>Kontakt oss</h1>
+        <!-- Title + inputs -->
+        <h1>Bestill bord</h1>
+        
+        <form>
+            <label for="name-email">Navn / E-post:</label><br>
+            <input id="name-email" type="text" placeholder="Skriv inn navn eller e-post"><br><br>
 
-    <!-- Email field -->
-    <input type="email" placeholder="Din e-post...">
+            <label for="mobile">Mobilnummer:</label><br>
+            <input id="mobile" type="tel" placeholder="Skriv inn mobilnummer"><br><br>
 
-    <!-- Phone number field -->
-    <input type="tel" placeholder="Ditt telefonnummer...">
+            <button type="submit">Send bestilling</button>
+        </form>
 
-    <!-- Back button -->
-    <a href="index.html">
-      <button>Tilbake</button>
-    </a>
-
-  </div>
-</div>
+        <!-- Back button -->
+        <a href="index.html" class="btn">
+            <button type="button">Tilbake</button>
+        </a>
+    </div>
 
 </body>
 </html>
+
