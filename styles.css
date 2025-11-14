@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding:0; /* controls space around banner */
+    background-color: rgb(238, 239, 255); /* removes white edges and gives cool background */
+}
+
+.container {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    overflow: hidden; /* hides anything outside container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.mycover {
+        max-width: 40vw;
+        max-height: 30vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        opacity: 0.9; /* controls transparency */
+        animation: fadeInZoom 1.5s ease-in-out forwards;
+}
+
+@media (max-width: 600px) {
+    .container {
+        min-height: 180px;
+    }
+    .mycover {
+        max-width: 98vw;
+        max-height: 30vh;
+    }
+}
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 100px; /* how tall the fade is */
+    opacity: 0.6; /* how strong the fade effect is */
+    pointer-events: none;
+}
+
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0.6;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    margin-top: 20px;        /* space from above content */
+}
+.my-button {
+    background-color: #8a2b2b; 
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 195, 105);
+    padding: 20px 32px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.my-button:hover {
+    background-color: #b33a3a;   /* lighten background */
+    transform: scale(1.1);        /* slightly bigger */
+    color: #e4db99;                  /* optional: change text color */
+}
+/*LAGE ANIMASJON FOR KNAPPENE*/
