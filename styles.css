@@ -24,7 +24,7 @@ html, body {
         display: block;
         margin: 0 auto;
         opacity: 0.9; /* controls transparency */
-        animation: fadeInZoom 1.5s ease-in-out forwards;
+        animation: fadeInZoom 1.2s ease-in-out forwards;
 }
 
 @media (max-width: 600px) {
@@ -80,3 +80,31 @@ html, body {
     color: #e4db99;                  /* optional: change text color */
 }
 /*LAGE ANIMASJON FOR KNAPPENE*/
+@keyframes buttonFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.button-container {
+    animation: buttonFadeIn 1s ease-in-out forwards;
+}
+.button-container {
+    display: flex;
+    justify-content: center; /* horizontal centering */
+    margin-top: 20px;        /* space from above content */
+}
+.my-button {
+    background-color: #8a2b2b; 
+    border: none;
+    border-radius: 5px;
+    color: rgb(255, 195, 105);
+    padding: 20px 32px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
