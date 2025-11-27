@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestil bord</title>
 <html>
-<head>
     <link rel="stylesheet" href="styles.css">
     <a href="index.html"><button class="my-button">Hoved side</button></a>
-
+    
+</head>
+<body>
 <div class="form-box">
     <h2 class="form-title">Kontakt info</h2>
 
+<form id="bookingForm" action="https://formspree.io/f/myzlzbgg" method="POST">
+    
   <div class="form-group">
     
 <input class="form-field" type="text" name="name" id="name" placeholder="Navn" required>
 
 <input class="form-field" type="text" name="telefon" placeholder="Telefon nummer " required>
 
-<input class="form-field" type="email" name="epost" placeholder="E-post" required>
+
+<input class="form-field" type="email" name="email" placeholder="E-post" required>
+
+<!-- Auto email response -->
+<input type="hidden" name="_autoresponse"
+       value="Takk for henvendelsen! Vi har mottatt meldingen din og svarer så snart som mulig.">
 
 <input class="form-field" type="date" name="dato" placeholder="Dato" required>
 
@@ -29,7 +37,14 @@
 <input class="form-field" type="text" name="kommentar" placeholder="Kommentarer">
 
 <button class="send">Send inn</button>
+   
+<input type="hidden" name="_subject" value="We received your message">
 
 </div>
+
+
+</form>
+
+<script src="script.js"></script>
 </body>
 </html>
