@@ -19,6 +19,10 @@ lett redigere på —hvor mage som ahr bestilt bor
 -lage et måned og tids skjema (i samme skjema) der det 
 viser grønn, gul eller rød basert på hvor mange som har 
 -nyt program (ikke formspree) til å sende auto email
+-vi skal lese oss op på CMS får å bruke det på nettsiden
+-når vi er ferdig med bordsettingen skal fortsette med 
+resten av nettsiden
+-de ansatte skal også kunne kanselere bokkinger
 *av Helle
 
 
